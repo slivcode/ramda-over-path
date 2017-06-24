@@ -1,0 +1,28 @@
+{
+  "name": "ramda-over-path",
+  "version": "0.0.1",
+  "description": "over path utility for ramda",
+  "keywords": [
+    "ramda",
+    "fp",
+    "immutable"
+  ],
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "author": "sliv <sliv.mbp@gmail.com>",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -r .awcache lib",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "ramda": "^0.24.1"
+  },
+  "devDependencies": {
+    "ramda": "^0.24.1"
+  }
+}
