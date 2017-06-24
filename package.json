@@ -16,7 +16,8 @@
   "typings": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "clean": "rm -r .awcache lib",
+    "clean": "rm -rf .awcache lib",
+    "prepare": "npm run build",
     "test": "jest"
   },
   "peerDependencies": {
