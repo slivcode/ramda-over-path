@@ -14,6 +14,8 @@ export interface IOverPath {
   <Root, Inner>(pathArr: IPathArr): (f: (i: Inner) => Inner) => (r: Root) => Root;
 }
 
-export const overPath: IOverPath = curry(
+const overPath: IOverPath = curry(
   (pathArr: IPathArr, transformer: Function, state: any) => over(lensPath(pathArr), transformer, state),
 );
+
+export default overPath;
